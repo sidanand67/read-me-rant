@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+==========================================
+    Main CSS
+==========================================
+*/
+
+*, 
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 100vh; 
+    overflow: hidden; 
+    color: white; 
+    font-family: Inter,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-sans;
+}
+
+header{
+    color: #C43157;
+    font-family: sans-serif; 
+}
+
+/* 
+==========================================
+    SCROLLBAR
+==========================================
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 20px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* 
+==========================================
+    NAVBAR
+==========================================
+*/
+
+#navbar{
+    border-right: 3px solid rgba(0, 22, 22, 0.4); 
+    max-width: 300px;
+    background-color: #32323C;
+}
+
+#navbar > header{
+    font-size: 1.5rem; 
+    margin: 1.5rem;
+    letter-spacing: 1.5px;
+    /* position: sticky; 
+    top: 0;  */
+}
+
+#navbar > ul{
+    margin: 0.5rem 0; 
+    height: 88%; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+#navbar > ul li{
+    padding: 1rem 2rem; 
+    border-top: 1px solid black; 
+}
+
+.nav-link{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.1rem; 
+    line-height: 25px;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+
+/* 
+==========================================
+    MAIN DOC        
+==========================================
+*/
+
+#main-doc{
+    flex: 1; 
+    padding: 2.5em; 
+    padding-top: 1em; 
+    overflow-y: auto;
+    background-color: #15141A;
+}
+
+
+.main-section{
+    padding-top: 5px; 
+}
+
+.main-section > header{
+    margin: 1rem auto; 
+    font-size: 1.8rem; 
+}
+
+.main-section > article{
+    margin-left: 1em;
+    line-height: 25px;
+    word-spacing: 0.8px;
+    letter-spacing: 0.5px;
+}
+
+.li-contents{
+    margin: 1rem 0 0 3rem;
+}
+
+.li-contents > li:not(:nth-last-of-type(1)){
+    padding-bottom: 1rem;
+}
+
+.main-section a{
+    text-decoration: none; 
+    color: #C43157;
+}
+
+.main-section a:hover{
+    border-bottom: 2px solid #C43157;
+}
+
