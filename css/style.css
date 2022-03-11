@@ -196,12 +196,12 @@ code{
 }
 
 .intro-sec > p{
-    width: 50%; 
     flex: 1;
 }
 
 .intro-sec > img{
     width: 15%; 
+    min-width: 140px;
     align-self: flex-start;
     border-radius: 5px;
     margin-left: 1rem;
@@ -262,11 +262,8 @@ code{
     .intro-sec{
         flex-direction: column;
     }
-    .intro-sec > p{
-        width: 100%; 
-    }
     .intro-sec > img{
-        width: 90%; 
-        margin-top: 1rem;
+        width: 70%; 
+        margin: 1rem auto; 
     }
 }
