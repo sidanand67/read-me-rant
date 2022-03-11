@@ -223,3 +223,7 @@ code{
     border-bottom: 2px solid #C43157;
 }
 
+.my-quote{
+    text-align: center;
+    font-style: italic;
+}
