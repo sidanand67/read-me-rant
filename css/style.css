@@ -6,8 +6,8 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+del, dfn, em, strong, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -71,6 +71,42 @@ header{
     font-family: sans-serif; 
 }
 
+strong{
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1rem;
+}
+
+blockquote p {
+    padding: 15px;
+    background:#2b2a33;
+    border-radius: 5px;
+    color: #cfcfd8;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+.code{
+    background-color: #2b2a33;
+    margin: 1rem; 
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+code{
+    display: block;
+    color: #cfcfd8;
+    font-family: monospace;
+}
+
 /* 
 ==========================================
     SCROLLBAR
@@ -111,11 +147,9 @@ header{
 }
 
 #navbar > header{
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     margin: 1.5rem;
     letter-spacing: 1.5px;
-    /* position: sticky; 
-    top: 0;  */
 }
 
 #navbar > ul{
@@ -133,15 +167,13 @@ header{
 .nav-link{
     color: #fff; 
     text-decoration: none;
-    font-size: 1.1rem; 
+    font-size: 1.2rem; 
     line-height: 25px;
 }
 
 .nav-link:hover{
     border-bottom: 2px solid #fff;
 }
-
-
 
 /* 
 ==========================================
