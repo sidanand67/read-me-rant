@@ -256,4 +256,17 @@ code{
         width: 100vw;
         max-width: 100vw;
     }
+    #main-doc{
+        padding: 1rem; 
+    }
+    .intro-sec{
+        flex-direction: column;
+    }
+    .intro-sec > p{
+        width: 100%; 
+    }
+    .intro-sec > img{
+        width: 90%; 
+        margin-top: 1rem;
+    }
 }
