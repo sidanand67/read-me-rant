@@ -7,10 +7,34 @@
     <title>Read Me Rant!</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main class="container">
-        <nav id="navbar">
+
+        <div class="mobile-container">
+            <nav class="topnav navbar">
+                <header>Read me Rant!</header>
+                <ul id="myLinks" onclick="myFunction()">
+                    <li><a href="#disclaimer" class="nav-link">Disclaimer</a></li>
+                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li><a href="#what_you_should_already_know" class="nav-link">What you should already know</a></li>
+                    <li><a href="#why_am_i_even_writing_it?" class="nav-link">Why am I even writing it?</a></li>
+                    <li><a href="#what_is_code?" class="nav-link">What is Code?</a></li>
+                    <li><a href="#gibberish_code" class="nav-link">Gibberish Code</a></li>
+                    <li><a href="#clean_code" class="nav-link">Clean Code</a></li>
+                    <li><a href="#hello_world" class="nav-link">Hello World</a></li>
+                    <li><a href="#why_are_we_so_brutal_to_html?" class="nav-link">Why are we so brutal to HTML?</a></li>
+                    <li><a href="#out_of_ideas" class="nav-link">Out of Ideas</a></li>
+                    <li><a href="#references" class="nav-link">References</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-2xl fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+
+        <nav class="navbar" id="navbar">
             <header>Read Me Rant!</header>
             <ul>
                 <li><a href="#disclaimer" class="nav-link">Disclaimer</a></li>
@@ -33,7 +57,7 @@
                 </header>
                 <article>
                     <p>
-                        Hey there👋 I know before starting anything, one is required to give some introductions but still I chose to present a disclaimer first. Why? Because I love you and want you to be prepared to read some dope shit. I ain't any writer but I guess I still can connect some words to make grammatically correct sentences. Moreover, in this digital age who needs a Oxford Degree to be a writer. I know you spotted an error but keep it to yourself. No one is giving you any marks for it 😏 
+                        Hey there! I know before starting anything, one is required to give some introductions but still I chose to present a disclaimer first. Why? Because I love you and want you to be prepared to read some dope shit. I ain't any writer but I guess I still can connect some words to make grammatically correct sentences. Moreover, in this digital age who needs a Oxford Degree to be a writer. I know you spotted an error but keep it to yourself. No one is giving you any marks for it 😏 
                     </p>
                 </article>
             </section>
@@ -226,6 +250,20 @@
             </section>
         </main>
     </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script>
+        function myFunction() {
+            let liItems = document.getElementById("myLinks"); 
+            let icon = document.querySelector(".icon"); 
+            if (liItems.style.display === "block"){
+                icon.innerHTML = `<i class="fa-solid fa-bars fa-2xl"></i>`; 
+                liItems.style.display = "none"; 
+            } 
+            else {
+                icon.innerHTML = `<i class="fa-solid fa-xmark fa-2xl"></i>`; 
+                liItems.style.display = "block"; 
+            }
+        }
+    </script>
 </body>
 </html>

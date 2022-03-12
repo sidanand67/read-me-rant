@@ -141,27 +141,28 @@ code{
 ==========================================
 */
 
-#navbar{
+.navbar{
     flex:1;
     border-right: 3px solid rgba(0, 22, 22, 0.4); 
     max-width: 375px;
     background-color: #32323C;
 }
 
-#navbar > header{
+.navbar > header{
     font-size: 2rem; 
     margin: 1.5rem;
     letter-spacing: 1.5px;
+    position: relative;
 }
 
-#navbar > ul{
+.navbar > ul{
     margin: 0.5rem 0; 
     height: 88%; 
     overflow-y: auto; 
     overflow-x: hidden; 
 }
 
-#navbar > ul li{
+.navbar > ul li{
     padding: 1rem 2rem; 
     border-top: 1px solid black; 
 }
@@ -175,6 +176,31 @@ code{
 
 .nav-link:hover{
     border-bottom: 2px solid #fff;
+}
+
+/* 
+==========================================
+    MOBILE NAVBAR
+==========================================
+*/
+.mobile-container{
+    display: none; 
+}
+
+.topnav{
+    overflow: hidden;  
+}
+
+.navbar > a.icon {
+    color: white; 
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+}
+
+#myLinks{
+    display: none; 
 }
 
 /* 
@@ -252,8 +278,20 @@ code{
         height: 100%;
     }
     #navbar{
-        width: 100vw;
-        max-width: 100vw;
+        display: none; 
+    }
+    .mobile-container{
+        display: block; 
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .navbar{
+        width: 100vw; 
+        max-width: 100vw; 
+    }
+    .navbar > header{
+        font-size: 1.8rem; 
     }
     #main-doc{
         padding: 1.5rem; 
